@@ -1,17 +1,15 @@
 
-import { NavbarComponent } from "@/components/navbar";
-
 export const metadata = {
-  title: 'Home',
-  description: 'Página de inicio',
+  title: 'Contactos',
+  description: 'Página de contactos',
 };
 
 const pageData = {
-  name: 'Home',
-  description: 'Página de inicio',
+  name: 'Contactos',
+  description: 'Página de contactos',
 }
 
-export default function HomePage() {
+export default function ContactosPage() {
 
   return (
 
@@ -23,7 +21,7 @@ export default function HomePage() {
         {/* SECCION: Header */}
         <div className={`flex-none`}>
 
-          <NavbarComponent />
+
 
         </div>
 

@@ -1,37 +1,38 @@
 
-import { NavbarComponent } from "@/components/navbar";
-
 export const metadata = {
-  title: 'Home',
-  description: 'Página de inicio',
+  title: 'Dash-0 | Calculadora',
+  description: 'Módulo calculadora',
 };
 
 const pageData = {
-  name: 'Home',
-  description: 'Página de inicio',
+  name: 'Calculadora',
+  description: 'Módulo calculadora',
+  father: '',
+  path: '',
+  dashboard: 'Dash-0'
 }
 
-export default function HomePage() {
+export default function CalculadoraDash0Page() {
 
   return (
 
     <>
 
       {/* Contenedor principal */}
-      <div className={`flex flex-col h-screen `}>
+      <div className={`flex flex-col h-full`}>
 
         {/* SECCION: Header */}
         <div className={`flex-none`}>
 
-          <NavbarComponent />
+
 
         </div>
 
         {/* SECCION: Body */}
-        <div className={`flex-1 flex flex-col text-neutral-400 items-center overflow-y-auto `}>
+        <div className={`flex-1 flex flex-col text-neutral-400 items-center overflow-y-auto`}>
 
           <h1 className={`my-auto text-3xl text-neutral-400 font-bold opacity-60`}>{pageData.name}
-          <small className={`text-amber-600 `}> page</small></h1>
+           <small className={`text-amber-600 `}> {pageData.dashboard} page</small></h1>
 
         </div>
 
